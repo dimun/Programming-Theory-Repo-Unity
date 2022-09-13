@@ -279,7 +279,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 41
+  m_VersionIndex: 47
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -379,10 +379,10 @@ GameObject:
   - component: {fileID: 5874566159116557269}
   - component: {fileID: 5874566159116557256}
   - component: {fileID: 5874566159116557258}
-  - component: {fileID: 5874566159116557261}
+  - component: {fileID: 2938150488585778592}
   m_Layer: 0
   m_Name: SideRobotCleaner
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1432,7 +1432,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 3440
+  m_VersionIndex: 3446
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1548,7 +1548,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!114 &5874566159116557261
+--- !u!114 &2938150488585778592
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1557,11 +1557,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5874566159116557267}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c8a4a4cf1825654c8eb64edf983901b, type: 3}
+  m_Script: {fileID: 11500000, guid: 015ebbb191fdb0944b9d408d64d43d7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 2
-  speed: 12
+  rotationSpeed: 4
+  speed: 13
 --- !u!1 &5874566160789155692
 GameObject:
   m_ObjectHideFlags: 0
@@ -1841,7 +1841,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 38
+  m_VersionIndex: 44
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []

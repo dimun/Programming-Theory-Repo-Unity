@@ -5,8 +5,8 @@ using UnityEngine;
 public class Robot : MonoBehaviour
 {
     private Rigidbody robotRb;
-    public float rotationSpeed = 4.0f;
-    public float speed = 13.0f;
+    public float rotationSpeed = 30.0f;
+    public float speed = 12.5f;
 
     private void Start()
     {
@@ -15,16 +15,25 @@ public class Robot : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        // Called here because it uses Physics
         Move();
+    }
+
+    private void Update()
+    {
+        Rotate();
     }
 
     public virtual void Move()
     {
         float verticalInput = Input.GetAxis("Vertical");
-        float horizontalInput = Input.GetAxis("Horizontal");
-
         robotRb.AddForce(transform.forward * verticalInput * speed * Time.fixedDeltaTime, ForceMode.VelocityChange);
-        transform.Rotate(0, rotationSpeed * horizontalInput, 0);
+    }
+
+    public virtual void Rotate()
+    {
+        float horizontalInput = Input.GetAxis("Horizontal");
+        transform.Rotate(0, rotationSpeed * horizontalInput * Time.deltaTime, 0);
     }
 
     public virtual void Clean()
