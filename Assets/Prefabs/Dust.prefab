@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1296527081118761454}
   m_Layer: 0
   m_Name: Dust
-  m_TagString: Untagged
+  m_TagString: Dust
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4821,7 +4821,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4640165490360268755}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 4.810001
